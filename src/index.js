@@ -10,9 +10,9 @@ import SignUp from './components/SignUp';
 
 firebaseApp.auth().onAuthStateChanged(user => {
     if (user) {
-        console.localStorage('user has signed in or up', user);
+        console.log('user has signed in or up', user);
     } else {
-        console.localStorage('user has signed out or still needs to sign in.');
+        console.log('user has signed out or still needs to sign in.');
     }
 })
 ReactDOM.render(
