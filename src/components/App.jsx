@@ -4,23 +4,28 @@ import { firebaseApp } from '../firebase';
 import AddGoal from './AddGoal';
 import GoalList from './GoalList';
 class App extends Component {
-  siginOut() {
+  signOut() {
     firebaseApp.auth().signOut();
   }
 
   render() {
     return (
       <div style={{ margin: '5px' }}>
-        <div>
-          <h3>Goals</h3>
-          <AddGoal />
-          <GoalList />
-        </div>
-        <button className="btn btn-danger" onClick={() => this.siginOut()}>
+
+        <h3>Goal Coachs</h3>
+        <AddGoal />
+        <hr />
+        <h4>Goals</h4>
+        <GoalList />
+        <hr />
+        <button
+          className="btn btn-danger"
+          onClick={() => this.signOut()}
+        >
           Sign Out
         </button>
       </div>
-    );
+    )
   }
 }
 
