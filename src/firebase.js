@@ -6,7 +6,7 @@ const config =
     authDomain: "goalcoach-3c675.firebaseapp.com",
     databaseURL: "https://goalcoach-3c675.firebaseio.com",
     projectId: "goalcoach-3c675",
-    storageBucket: "",
+    storageBucket: "goalcoach-3c675.firebaseapp.com",
     messagingSenderId: "777027455056"
 };
 

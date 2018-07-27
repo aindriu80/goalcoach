@@ -1,4 +1,4 @@
-import { SIGNED_IN, SET_GOALS } from "../constants";
+import { SIGNED_IN, SET_GOALS } from '../constants';
 
 export function logUser(email) {
   const action = {
